@@ -1,5 +1,8 @@
 # ColorPalette
 
+[![Build C++](https://github.com/neelbhatia1/ColorPalette/actions/workflows/main.yml/badge.svg)](https://github.com/neelbhatia1/ColorPalette/actions/workflows/main.yml)
+
+
 This is a simple C++ program for managing a collection or palette of RGB colors.
 
 Invoke the program by running **Palette**, followed by a list of the color values, such as:
