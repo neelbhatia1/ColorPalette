@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
       std::cout << "#" << argv[i] << std::endl;
     }  
   }
-}
+
 
 bool all_hex(char* word) {
   for(int i=0; i<strlen(word); i++) {
