@@ -23,7 +23,8 @@ bool all_hex(char* word) {
       || (word[i] >= 'A' && word[i] <='F')) {
       continue;
     }
-    else {
+    else if( word[i] >= 'F' || word[i] >= 'f' ) {
+      cout << word[i] << "ERR_VALUE: RGB values must be in 0-F range" << endl;
       return false;
     }
   }
