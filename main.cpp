@@ -9,9 +9,9 @@ int main(int argc, char* argv[]) {
   for(int i=1; i < argc; i++) {
     int length = std::strlen(argv[i]);
     if( (length == 3 || length == 6) && all_hex(argv[i]) ) {
-      cout << "#" << argv[i] << endl;
+      std::cout << "#" << argv[i] << std::endl;
     } else if( length != 3 && length != 6 ) 
-      { cout << length << "ERR_LENGTH: RGB values must be either 3 or 6 characters long" << endl; }
+      { std::cout << length << "ERR_LENGTH: RGB values must be either 3 or 6 characters long" << std::endl; }
 
       std::cout << "#" << argv[i] << std::endl;
     }  
@@ -25,7 +25,7 @@ bool all_hex(char* word) {
       continue;
     }
     else if( word[i] >= 'F' || word[i] >= 'f' ) {
-      cout << word[i] << "ERR_VALUE: RGB values must be in 0-F range" << endl;
+      std::cout << word[i] << "ERR_VALUE: RGB values must be in 0-F range" << std::endl;
       return false;
     }
   }
