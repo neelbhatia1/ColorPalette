@@ -12,9 +12,9 @@ int main(int argc, char* argv[]) {
     int length = strlen(argv[i]);
     if( (length == 3 || length == 6) && all_hex(argv[i]) ) {
       cout << "#" << argv[i] << endl;
-    }  
+    } else if( length != 3 && length != 6 ) 
+      { cout << length << "ERR_LENGTH: RGB values must be either 3 or 6 characters long" << endl; }
   }
-  return 0;
 }
 
 bool all_hex(char* word) {
